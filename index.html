@@ -15,11 +15,7 @@
   <!-- !PAGE CONTENT! -->
   <div class="w3-content" style="padding:128px 16px">
 
-    <div class="w3-content w3-row" >
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-
-    <h1>Our software makes <span id="swappable-title"><span>developpers</span></span> happy</h1>
+    <h1><span id="yes"><span>Yes</span></span> <span id="we"><span>we</span></span> <span id="can"><span>can</span></span></h1>
 
   <!-- End Page Content -->
   </div>
@@ -29,14 +25,32 @@
 <script src="dist/slogan-roulette.min.js"></script>
 <script>
 // all options
-$('#swappable-title').sloganRoulette({
+$('#yes').sloganRoulette({
+	autoplay: true,
+	repeat: true,
+	startDelay: 200,
+	interval: 1000,
+	outClass: "bounceOut",
+	inClass: "bounceIn",
+	slogans: ["yes"]
+});
+$('#we').sloganRoulette({
 	autoplay: true,
 	repeat: true,
 	startDelay: 700,
 	interval: 1000,
 	outClass: "bounceOut",
 	inClass: "bounceIn",
-	slogans: ["designers", "doctors", "architects", "space monkeys"]
+	slogans: ["we"]
+});
+$('#yes').sloganRoulette({
+	autoplay: true,
+	repeat: true,
+	startDelay: 1200,
+	interval: 1000,
+	outClass: "bounceOut",
+	inClass: "bounceIn",
+	slogans: ["can"]
 });
 </script>
 </html>
